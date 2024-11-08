@@ -1,0 +1,347 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff9900;
+    font-style: italic;
+}
+
+header .logo span{
+    color: #64cf33;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff9900;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    background: #f0f0f0;
+}
+
+.hero-content {
+    max-width: 50%;
+    font-style: italic;
+}
+
+.hero-content span{
+    color: #ff9900;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #347815;
+}
+
+
+
+.hero img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+/* Services Section */
+#services {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ff9900;
+}
+#services h3{
+    color: #ff9900;
+}
+.service-box {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    color: #347815;
+}
+
+.service {
+    flex: 1;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    color: #64cf33;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+/* About Us Section */
+#about {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h2 {
+    color: #ff9900;
+    font-size: 2.5rem;
+  
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-content p {
+    color: #347815;
+    flex: 1;
+    font-size: 1.2rem;
+  
+    line-height: 1.6;
+}
+
+.about-content img {
+    width: 45%;
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* Contact Section */
+.contact-form {
+    color: #ff9900;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    background-color: #f0f0f0;
+}
+
+.contact-form form {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.contact-form input, 
+.contact-form textarea, 
+.contact-form button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff9900;
+}
+
+.contact-image img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.footer-column h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ff9900;
+}
+
+.footer-bottom p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .service-box {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    
+        .about-content {
+            flex-direction: column-reverse;
+            text-align: center;
+            font-size: 10px;
+        }
+    
+        .about-content img {
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+    
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .contact-image img {
+        width: 100%;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Updated Media Queries */
+
+/* For smaller screens (up to 480px) */
+@media (max-width: 480px) {
+    /* Align header and nav items in a single row */
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        gap: 0.5rem; /* Adjust gap for closer alignment */
+        flex-wrap: wrap; /* Ensures items stay on one line */
+        justify-content: center;
+    }
+
+    /* Prevent horizontal scroll on mobile */
+    body, html {
+        overflow-x: hidden;
+    }
+
+    /* Additional adjustments for mobile readability */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}
+
+/* Hide scrollbars globally on mobile if any content still creates overflow */
+html {
+    overflow-x: hidden;
+}
